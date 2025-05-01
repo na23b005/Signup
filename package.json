@@ -2,9 +2,10 @@
   "name": "signup",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "nodemon backend/server.js"
-  },
+ "scripts": {
+  "dev": "nodemon backend/server.js",
+  "build": "echo 'No build step required'"
+},
   "type": "module",
   "keywords": [],
   "author": "",
