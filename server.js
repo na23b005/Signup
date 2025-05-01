@@ -3,9 +3,9 @@ import dotenv from "dotenv";
 import path from "path";
 import bcrypt from "bcryptjs";
 import mongoose from "mongoose";
-import collection from "./models/user.js";
+import collection from "./Backend/models/user.js";
 
-import { connectDb } from "./config/db.js";
+import { connectDb } from "./Backend/config/db.js";
 
 dotenv.config();
 const app = express();
@@ -80,7 +80,7 @@ app.post("/login", async (req, res) => {
     return res.send("An error occurred during login");
   }
 });
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   connectDb();
