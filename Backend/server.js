@@ -80,7 +80,7 @@ app.post("/login", async (req, res) => {
     return res.send("An error occurred during login");
   }
 });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   connectDb();
